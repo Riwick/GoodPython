@@ -71,3 +71,6 @@ print(t_a)
 
 a = [x ** 2 for x in [y for y in range(5) if y % 2 == 0] if x == 2]
 print(a)
+
+a = [[i for i in [x for x in range(6)]] for z in range(6)]
+print(a)

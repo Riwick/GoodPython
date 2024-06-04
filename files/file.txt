@@ -1,0 +1,2 @@
+Some info in file, Какая-то информация в файле
+Another one line, ещё одна строчка

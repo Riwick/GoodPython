@@ -1,0 +1,40 @@
+In this lesson, we will talk about generator functions. But first, let's return to the generator expressions that we discussed in the previous lesson. Let's assume that we need arithmetic averages for different sequences of integers:
+
+
+To do this, we could write the following generator expression:
+
+
+But it is not very convenient for perception and editing, and, in addition, the range() function is written here twice when calculating the average value. There are two ways to fix this. In the first, declare your own function to calculate the arithmetic mean and call it in the generator:
+
+
+
+And in the second method, you can create your own generator function that would output the desired values. Let's start by writing down a simple generator function, and then return to our original problem. The function will simply return the values of the list:
+
+
+Look, here in the loop a new yield operator is written for us, which returns the current value of x and "freezes" the state of the function until the next access to it (including all local variables). This is how generator functions are defined. If we call her now:
+
+
+then, look, the variable d refers to a generator object, that is, we are dealing with a generator here, the values of which can be iterated using the next() function:
+
+
+Or, through a loop:
+
+This is the role of the yield operator. It turns an ordinary function into a generator and each time the next() function is called, the generator function is activated, returns the next value and "freezes" its state along with local variables until the next call to the next() function. (We show this in debugging mode).
+
+I hope you now have a good idea of how the yield operator and a simple generator function work. Let's go back to our original problem and rewrite the avg() function using the yield operator (creating another one):
+
+
+The principle is the same here, at each iteration of the loop, a new calculated arithmetic mean will be returned. Next, we can use this generator function and display all its values using the list() function:
+
+
+As you can see, the result is exactly the same as the original one. That is, we have replaced the generator expression with a generator function. Well, as always, the question arises, why was all this necessary? Why not use conventional generators? What prevents us from doing this? In general, nothing. The advantage here is mainly in the ease of use. In the generator expression, we can write only one operator for generating a value, and in the generator function, an arbitrary fragment of the program that implements the logic we need for generating the next value. This is the key difference between a generator function and a conventional generator.
+
+At the end of this lesson, I will give you another example of using a generator function. Suppose we want to find all the initial indexes of the word "generator" in a text file lesson_54.txt . To do this, first open this file for reading:
+
+And inside the try block, we will call the generator function, which will consistently return the indexes of the found word "generator". We will define the function itself above (according to the program), as follows:
+
+Here, in the first cycle, we read the file line by line. In the second nested while loop, we search for the specified word in the string using the find() method. And, if this method finds the specified fragment, that is, returns a value greater than -1, then the function generates the output index value of the found word as g_indx + indx. Here g_indx is the text offset for the current line, that is, in it we sum up the lengths of the previous lines to form the index of the word in the text, and not in the line.
+
+After running this program, we see all the found indexes of this word in the text. As you can see, in the function we described the non-trivial logic of the algorithm for searching for a word in a text file. It would be more difficult to do this with a conventional generator. This is the advantage of generator functions - they allow us to immediately describe the functionality we need in one place of the code.
+
+This concludes the next lesson with you. To consolidate the material, as always, go through the practical tasks and move on to the next lesson.

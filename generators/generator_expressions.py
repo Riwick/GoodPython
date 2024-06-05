@@ -6,7 +6,7 @@
 a = (x ** 2 for x in range(5)) # this is not a tuple
 print(a)
 
-print(next(a), next(a), next(a), next(a), next(a))
+print(next(a), next(a), next(a), next(a), next(a)) # We can only go through the generator once
 # next(a) - StopIteration
 
 gen = (x ** 2 for x in range(6))

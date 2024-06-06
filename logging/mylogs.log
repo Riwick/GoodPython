@@ -1,0 +1,14 @@
+
+# before formatting
+DEBUG:root:Debug
+INFO:root:Info
+WARNING:root:Warning
+ERROR:root:Error
+CRITICAL:root:Critical
+
+# after formatting
+DEBUG (2024-06-07 01:13:11,899) - Debug
+INFO (2024-06-07 01:13:11,900) - Info
+WARNING (2024-06-07 01:13:11,900) - Warning
+ERROR (2024-06-07 01:13:11,900) - Error
+CRITICAL (2024-06-07 01:13:11,900) - Critical

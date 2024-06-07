@@ -1,7 +1,7 @@
-DEBUG (2024-06-07 01:22:40,123) - Debug
-INFO (2024-06-07 01:22:40,123) - Info
-WARNING (2024-06-07 01:22:40,123) - Warning
-ERROR (2024-06-07 01:22:40,123) - Error
-CRITICAL (2024-06-07 01:22:40,123) - Critical
-ERROR (2024-06-07 01:22:40,123) - You can't divide by zero
-Some Logger: INFO (2024-06-07 01:22:40,123) - Some log with handler and formatter
+DEBUG (2024-06-07 10:38:11,519) - Debug
+INFO (2024-06-07 10:38:11,519) - Info
+WARNING (2024-06-07 10:38:11,519) - Warning
+ERROR (2024-06-07 10:38:11,519) - Error
+CRITICAL (2024-06-07 10:38:11,519) - Critical
+ERROR (2024-06-07 10:38:11,519) - You can't divide by zero
+Some Logger: INFO (2024-06-07 10:38:11,519) - Some log with handler and formatter

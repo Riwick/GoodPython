@@ -1,1 +1,1 @@
-This repository is essentially a collection of the basics of the python language.
+This repository is, in fact, some collection of the basics of the python language, based on Sergey Balakirev's video course on YouTube. Link to the video course itself: https://youtube.com/playlist?list=PLA0M1Bcd0w8yWHh2V70bTtbVxJICrnJHd&si=qqgQoGt1YdQDr0Nw
